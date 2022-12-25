@@ -9,7 +9,8 @@ import {
 } from "@material-ui/core";
 const columns = [
     { name: 'id', title: 'ID' },
-    { name: 'name', title: 'Employee Name' },
+    { name: 'name', title: 'User Name' },
+    {name : 'emp_name', title :'Employee Name'},
     { name: 'address', title: 'Address' },
     {name:'dob',title:'Date of Birth'},
     {name:'gender', title:'Gender'},
@@ -29,7 +30,8 @@ const ViewEmployee = () => {
             const rows=data.map((obj,index)=>{
                 const row={};
                 row.id=obj.id;
-                row.name=obj.empName;
+                row.emp_name=obj.empName;
+                row.name=obj.username;
                 row.address=obj.address;
                 row.dob=obj.dob;
                 row.gender=obj.gender;
